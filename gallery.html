@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Галерея мемов</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="icon" href="icon.png">
+</head>
+<body>
+
+    <div class="header">
+        <h1>Галерея мемов</h1>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="history.html">История сленга</a></li>
+                <li><a href="catalog.html">Каталог сленга</a></li>
+                <li><a href="tests.html">Тесты/Игры</a></li>
+                <li><a href="gallery.html">Галерея мемов</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="container">
+        <div class="section">
+            <h2 class="text-center">Популярные мемы</h2>
+            <p class="text-center">Здесь вы найдете самые вирусные мемы, которые развеселят вас и помогут понять современные тренды.</p>
+
+            <!-- Карусель мемов -->
+            <div id="memeCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/7.png" class="d-block w-100" alt="Мем 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/4.png" class="d-block w-100" alt="Мем 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/5.png" class="d-block w-100" alt="Мем 3">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/1.jpg" class="d-block w-100" alt="Мем 3">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/6.webp" class="d-block w-100" alt="Мем 3">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/9.webp" class="d-block w-100" alt="Мем 3">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#memeCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#memeCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                </button>
+            </div>
+
+            <!-- Форма для добавления мемов -->
+            <h2>Добавь свой мем!</h2>
+            <form class="section">
+                <input type="file" id="memeInput" accept="image/*">
+                <br>
+                <br>
+                <button type="submit">Загрузить</button>
+            </form>
+
+
+            
+                <div class="section">
+                    <h2>Самые популярные мемы на сегодня</h2>
+                    <br>
+                    <ul class="popular-memes">
+                        <li>
+                            <h4>Юра Борисов:</h4>
+                            <p>Мемы про российского актера Юру Борисова стали популярными после его номинации на Оскар, шутки о его плохом английском.</p>
+                        </li>
+                        <li>
+                            <h4>Сидим с бобром за столом:</h4>
+                            <p>Песня о бобре стала вирусной благодаря абсурдному тексту и заводной мелодии.</p>
+                        </li>
+                        <li>
+                            <h4>Американские выборы:</h4>
+                            <p>Мемы про американские выборы были популярны в январе 2025 года, шутки про американского президента.</p>
+                        </li>
+                        <li>
+                            <h4>Дэвид Линч:</h4>
+                            <p>Мемы в честь Дэвида Линча стали популярными после его смерти, с подборками мемов и фраз из его фильмов.</p>
+                        </li>
+                        <li>
+                            <h4>Сигма Бой:</h4>
+                            <p>Мемы про Сигма Боя стали популярными благодаря его хитам и стилю.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Дополнительные ресурсы -->
+            <section class="section">
+                <h2>Дополнительные ресурсы</h2>
+                <p>Для тех, кто хочет углубиться в изучение молодежного сленга, вот несколько ресурсов:</p>
+                <ul>
+                    <li><a href="https://www.urbandictionary.com/" target="_blank">Urban Dictionary</a> – словарь молодежного сленга</li>
+                    <li><a href="https://www.memedroid.com/" target="_blank">Memedroid</a> – платформа для создания и обмена мемами</li>
+                    <li><a href="https://www.reddit.com/r/memes/" target="_blank">memes на Reddit</a> – популярное сообщество для обмена мемами</li>
+                </ul>
+            </section>
+        </div>
+    </div>
+
+            <script>
+                document.addEventListener("DOMContentLoaded", function() {
+                    // Интерактивная лента времени
+                    const timelineItems = document.querySelectorAll('.timeline-item');
+                    timelineItems.forEach(item => {
+                        const header = item.querySelector('h3');
+                        header.addEventListener('click', function() {
+                            const content = item.querySelector('p');
+                            content.classList.toggle('active');
+                            content.style.display = content.style.display === 'none' ? 'block' : 'none';
+                        });
+                    });
+                });
+            </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
