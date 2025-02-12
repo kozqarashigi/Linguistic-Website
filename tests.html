@@ -23,82 +23,73 @@
         </nav>
     </div>
 
- 
-
     <div class="container">
         <div class="section">
-        <h2>Викторина "Угадай значение"</h2>
-        <p>Угадайте значение сленгового слова!</p>
+            <h2>Викторина "Угадай значение"</h2>
+            <p>Угадайте значение сленгового слова!</p>
 
-        <div id="quiz">
-            <div id="question-container">
-                <h3 id="question">Что означает слово "Кринж"?</h3>
-                <div class="options">
-                    <button class="option btn btn-outline-primary" onclick="checkAnswer(this, 'wrong')">Расслабление, отдых</button>
-                    <button class="option btn btn-outline-primary" onclick="checkAnswer(this, 'correct')">Неловкость, стыд</button>
-                    <button class="option btn btn-outline-primary" onclick="checkAnswer(this, 'wrong')">Хитрость, обман</button>
-                    <button class="option btn btn-outline-primary" onclick="checkAnswer(this, 'wrong')">Большая радость</button>
+            <div id="quiz">
+                <div id="question-container-1">
+                    <h3 id="question">Что означает слово "Кринж"?</h3>
+                    <div class="options">
+                        <button class="option btn btn-outline-primary" onclick="checkAnswer(this, 'result-1', 'wrong')">Расслабление, отдых</button>
+                        <button class="option btn btn-outline-primary" onclick="checkAnswer(this, 'result-1', 'correct')">Неловкость, стыд</button>
+                        <button class="option btn btn-outline-primary" onclick="checkAnswer(this, 'result-1', 'wrong')">Хитрость, обман</button>
+                        <button class="option btn btn-outline-primary" onclick="checkAnswer(this, 'result-1', 'wrong')">Большая радость</button>
+                    </div>
+                    <div id="result-1" class="mt-3"></div>
+                </div>
+
+                <div id="question-container-2">
+                    <h3 id="question">Что означает слово "Чилл гай"?</h3>
+                    <div class="options">
+                        <button class="option btn btn-outline-primary" onclick="checkAnswer(this, 'result-2', 'correct')">Человек, который предпочитает расслабляться, не спеша</button>
+                        <button class="option btn btn-outline-primary" onclick="checkAnswer(this, 'result-2', 'wrong')">Человек, который любит активные виды спорта</button>
+                        <button class="option btn btn-outline-primary" onclick="checkAnswer(this, 'result-2', 'wrong')">Человек, который всегда занят работой</button>
+                        <button class="option btn btn-outline-primary" onclick="checkAnswer(this, 'result-2', 'wrong')">Человек, который любит путешествовать</button>
+                    </div>
+                    <div id="result-2" class="mt-3"></div>
+                </div>
+
+                <div id="question-container-3">
+                    <h3 id="question">Что означает слово "Краш"?</h3>
+                    <div class="options">
+                        <button class="option btn btn-outline-primary" onclick="checkAnswer(this, 'result-3', 'wrong')">Человек, который водит медленно</button>
+                        <button class="option btn btn-outline-primary" onclick="checkAnswer(this, 'result-3', 'correct')">Объект симпатии, часто тайной</button>
+                        <button class="option btn btn-outline-primary" onclick="checkAnswer(this, 'result-3', 'wrong')">Человек, который любит приключения</button>
+                        <button class="option btn btn-outline-primary" onclick="checkAnswer(this, 'result-3', 'wrong')">Человек, который всегда веселый</button>
+                    </div>
+                    <div id="result-3" class="mt-3"></div>
+                </div>
+
+                <div id="question-container-4">
+                    <h3 id="question">Что означает слово "Ливнуть"?</h3>
+                    <div class="options">
+                        <button class="option btn btn-outline-primary" onclick="checkAnswer(this, 'result-4', 'correct')">Выйти, уйти, устраниться</button>
+                        <button class="option btn btn-outline-primary" onclick="checkAnswer(this, 'result-4', 'wrong')">Внести пожертвование</button>
+                        <button class="option btn btn-outline-primary" onclick="checkAnswer(this, 'result-4', 'wrong')">Продвигать что-то</button>
+                        <button class="option btn btn-outline-primary" onclick="checkAnswer(this, 'result-4', 'wrong')">Жизненная ситуация</button>
+                    </div>
+                    <div id="result-4" class="mt-3"></div>
+                </div>
+
+                <div id="question-container-5">
+                    <h3 id="question">Что означает слово "Соулмейт"?</h3>
+                    <div class="options">
+                        <button class="option btn btn-outline-primary" onclick="checkAnswer(this, 'result-5', 'wrong')">Человек, который всегда злится</button>
+                        <button class="option btn btn-outline-primary" onclick="checkAnswer(this, 'result-5', 'correct')">Близкий по духу человек</button>
+                        <button class="option btn btn-outline-primary" onclick="checkAnswer(this, 'result-5', 'wrong')">Человек, который любит приключения</button>
+                        <button class="option btn btn-outline-primary" onclick="checkAnswer(this, 'result-5', 'wrong')">Человек, который всегда веселый</button>
+                    </div>
+                    <div id="result-5" class="mt-3"></div>
                 </div>
             </div>
-            <div id="result" class="mt-3"></div>
         </div>
-
-        <div id="quiz">
-            <div id="question-container">
-                <h3 id="question">Что означает слово "Чилл гай"?</h3>
-                <div class="options">
-                    <button class="option btn btn-outline-primary" onclick="checkAnswer(this, 'correct')">Человек, который предпочитает расслабляться, не спеша</button>
-                    <button class="option btn btn-outline-primary" onclick="checkAnswer(this, 'wrong')">Человек, который любит активные виды спорта</button>
-                    <button class="option btn btn-outline-primary" onclick="checkAnswer(this, 'wrong')">Человек, который всегда занят работой</button>
-                    <button class="option btn btn-outline-primary" onclick="checkAnswer(this, 'wrong')">Человек, который любит путешествовать</button>
-                </div>
-            </div>
-            <div id="result" class="mt-3"></div>
-        </div>
-
-        <div id="quiz">
-            <div id="question-container">
-                <h3 id="question">Что означает слово "Краш"?</h3>
-                <div class="options">
-                    <button class="option btn btn-outline-primary" onclick="checkAnswer(this, 'wrong')">Человек, который водит медленно</button>
-                    <button class="option btn btn-outline-primary" onclick="checkAnswer(this, 'correct')">Объект симпатии, часто тайной</button>
-                    <button class="option btn btn-outline-primary" onclick="checkAnswer(this, 'wrong')">Человек, который любит приключения</button>
-                    <button class="option btn btn-outline-primary" onclick="checkAnswer(this, 'wrong')">Человек, который всегда веселый</button>
-                </div>
-            </div>
-            <div id="result" class="mt-3"></div>
-        </div>
-
-        <div id="quiz">
-            <div id="question-container">
-                <h3 id="question">Что означает слово "Ливнуть"?</h3>
-                <div class="options">
-                    <button class="option btn btn-outline-primary" onclick="checkAnswer(this, 'correct')">Выйти, уйти, устраниться</button>
-                    <button class="option btn btn-outline-primary" onclick="checkAnswer(this, 'wrong')">Внести пожертвование</button>
-                    <button class="option btn btn-outline-primary" onclick="checkAnswer(this, 'wrong')">Продвигать что-то</button>
-                    <button class="option btn btn-outline-primary" onclick="checkAnswer(this, 'wrong')">Жизненная ситуация</button>
-                </div>
-            </div>
-            <div id="result" class="mt-3"></div>
-        </div>
-
-        <div id="quiz">
-            <div id="question-container">
-                <h3 id="question">Что означает слово "Соулмейт"?</h3>
-                <div class="options">
-                    <button class="option btn btn-outline-primary" onclick="checkAnswer(this, 'wrong')">Человек, который всегда злится</button>
-                    <button class="option btn btn-outline-primary" onclick="checkAnswer(this, 'correct')">Близкий по духу человек</button>
-                    <button class="option btn btn-outline-primary" onclick="checkAnswer(this, 'wrong')">Человек, который любит приключения</button>
-                    <button class="option btn btn-outline-primary" onclick="checkAnswer(this, 'wrong')">Человек, который всегда веселый</button>
-                </div>
-            </div>
-            <div id="result" class="mt-3"></div>
-        </div>
-    </div></div>
+    </div>
 
     <script>
-        function checkAnswer(button, answer) {
-            const result = document.getElementById('result');
+        function checkAnswer(button, resultId, answer) {
+            const result = document.getElementById(resultId);
             if (answer === 'correct') {
                 result.textContent = 'Правильно!';
                 result.className = 'alert alert-success';
